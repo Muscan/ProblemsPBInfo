@@ -425,6 +425,33 @@ namespace CBasics
             Console.Write("Suma este " + suma);
         }
 
+        public static void PrintElements(int [] number)
+        {
+            Console.WriteLine("Values ");
+            for (int i = 0; i < number.Length; i++)
+                Console.Write(number[i] + " ");
+        }
+        public static void Ordonare509(int [] nr)
+        {
+            int flagIsOrdered = 0;
+            do
+            {
+                flagIsOrdered = 0;
+                for (int i = 0; i < nr.Length - 1; i++)
+                {
+                    if (nr[i] > nr[i + 1])
+                    {
+                        int aux = nr[i];//90
+                        nr[i] = nr[i + 1];//50
+                        nr[i + 1] = aux;
+                        flagIsOrdered = 1;
+                    }
+
+                }
+            } while (flagIsOrdered == 1);
+            PrintElements(nr);
+           
+        }
         
     } 
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 
 using static CBasics.PbInfo;
+using static CBasics.RandomExercices;
 
 namespace CBasics
 {
@@ -30,6 +31,14 @@ namespace CBasics
             //SumaN2(5);
             //Suma51();
             //Suma459();
+            int[] vector = { 90, 50, 41, 32, 33, 0, 1 };
+            
+            //Ordonare509(vector);
+
+            //addNumbers(-2, 3);
+            //SignChar(10, 5, '!');
+            SwitchSign(20, 2, '%');
+            
 
 
 
